@@ -3,9 +3,6 @@
 @import "tailwindcss-primeui";
 
 @layer base {
-    .panel {
-        @apply border-2 rounded-sm p-3 mb-3 flex gap-3 flex-col
-    }
     
     table tr {
         @apply border-b;
@@ -15,5 +12,11 @@
         > th, td {
             @apply p-1;
         }
+    }
+}
+
+@layer components {
+    .panel {
+        @apply border-2 rounded-sm p-3 mb-3 flex gap-3 flex-col
     }
 }
